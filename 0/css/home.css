@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body {overflow:hidden}
+nav {background-color:#2E2E2E; height:80px; border:0px}
+nav button {float:right; height:40px; width:80px; border-radius:6px; border:0; position:relative; margin-top:20px; margin-right:20px}
+nav a .LogIn {color:white; background-color:#13CBB7}
+nav a .LogIn:hover {background-color:#F3F3F3; border:1px solid #13CBB7; color:#13CBB7}
+nav a .SignUp {background-color:#009CAA; color:white}
+nav a .SignUp:hover {color:#009CAA; background-color:#F3F3F3; border:1px solid #009CAA}
+nav img {width:55px; margin:10px}
+.content {height:530px}
+.footer {height:40px; background-color:#ea9d2a}
