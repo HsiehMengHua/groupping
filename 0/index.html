@@ -5,7 +5,7 @@
   <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
   <header>
@@ -42,7 +42,7 @@
       <div class="search-area">
         <form class="search-bar" action="">
           <input class="search-input" type="search" placeholder="韓國零食, 麻花捲, 抹茶牛奶醬..."><!--
-          --><select>
+          --><select class="search_category">
                <option value="">全部類別</option>
                <option value="">熱銷美食</option>
                <option value="">服飾鞋包</option>
@@ -52,8 +52,14 @@
              </select><!--
           --><button class="search-btn" type="submit"></button>
         </form>
+        <div class="link-btn clear">
+          <div class="btn-wrapper"><button class="see-nearby">看我附近的揪團 &#8594;</button></div>
+          <div class="btn-wrapper"><button class="view-all">看所有團購 &#8594;</button></div>
+        </div>
       </div>
     </div>
+  </section>
+  <section>
     <div id="view-nearby" class="clear">
       <div id="map"></div>
       <div id="list">
@@ -66,10 +72,12 @@
         </ul>
       </div>
     </div>
-    <div id="view-all">
+  </section>
+  <section>
+    <div id="view-items">
       <div class="container">
         <div id="sort-tag">
-          <button>即將截止</button>
+          <button class="active">即將截止</button>
           <button>熱門團購</button>
           <button>最新開團</button>
         </div>
@@ -142,7 +150,7 @@
               <div class="item">
                 <div class="item-thumb"><img src="img/pd4.jpg" alt="★上班這黨事激推~下班追劇　搭配這一味　一口接一口停不下來"></div>
                 <div class="content">
-                  <div class="title"><p>★上班這黨事激推~下班追劇搭配這一味　一口接一口停不下來</p></div>
+                  <div class="title"><p>★上班這黨事激推~下班追劇搭配這一味　一口接一口停</p></div>
                   <div class="initiator clear">
                     <p class="user-id"><span class="glyphicon glyphicon-user"></span>userid</p>
                     <p class="location">彰化</p>
@@ -179,6 +187,8 @@
       $(".menu").slideUp("fast","swing");
     });
     
+    $("#jumbotron").css("height",($("#jumbotron").width()/2).toString());
+    $("#jumbotron #slider .slides li").css("height",$("#jumbotron").height().toString());
   </script>
 </body>
 </html>
