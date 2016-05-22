@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-
+<?php include("connectDB.php"); ?>
 
 <html>
 <head>
@@ -474,7 +474,6 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvEv5ChK_DJBW9ZYBxLwuo5I88dGNQ18Y&signed_in=true&callback=initMap"></script>
   <script src="js/googlemap.js"></script>
   <script src="js/slideshow.js"></script>
-  <script src="js/itemCarousel.js"></script>
   <script>
     // Set the size of #jumbotron
     $("#jumbotron").css("height",($("#jumbotron").width()/2).toString());
