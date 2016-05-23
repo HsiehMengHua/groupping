@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-
 <?php include("connectDB.php"); ?>
 
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">

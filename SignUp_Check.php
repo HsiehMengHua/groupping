@@ -10,7 +10,7 @@
 include("connectDB.php");
 
 //讀值
-$email = str_replace(" ", "", $_POST["email"]);
+$email = str_replace(" ", "", $_POST["email"]); // 刪空白
 $password = str_replace(" ", "", $_POST["password"]);
 $name = input($_POST["name"]);
 $userName = input($_POST["userName"]);
@@ -31,7 +31,7 @@ if(empty($password)){
 	echo "Password is required"."<br>";
 	$err=true;
 }else if(strlen($password)>20){
-	echo "The password should be no more than 20 characters.";
+	echo "The password should not be more than 15 characters.";
 	$err=true;
 }
 
