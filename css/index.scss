@@ -2,6 +2,11 @@ $darkgray: #646d7c;
 $searchArea_border: 1px solid #97a2a7;
 $border_radius: 5px;
 
+// hide the search bar in header
+header {
+  .search-bar {display: none;}
+  #logo {margin-top: 30px;}
+}
 
 /* jumbotron */
 #jumbotron {

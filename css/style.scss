@@ -1,7 +1,19 @@
 $darkgray: #646d7c;
 
 /* General */
-*{margin: 0; padding: 0;}
+*{
+  margin: 0;
+  padding: 0;
+  ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: yellow;
+  }
+
+  ::selection {
+    color: white;
+    background: $darkgray;
+  }
+}
 
 html {
   width: 100%;
@@ -51,6 +63,7 @@ li {
   margin: 0 10px;
 }
 
+
 /* header */
 header {
   width: 100%;
@@ -68,12 +81,38 @@ header {
   z-index: 99;
   
   #logo {
-    margin-top: 30px;
+    //margin-top: 30px;
     margin-left: 85px;
     
     @media (max-width: 768px){
       margin-top: 20px;
       margin-left: 55px;
+    }
+  }
+  
+  .search-bar {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 26px;
+    
+    span {
+      font-size: 1.5em;
+      color: $darkgray;
+      position: relative;
+      top: 7px;
+      cursor: pointer;
+    }
+    
+    input {
+      display: none;
+      width: 195px;
+      height: 35px;
+      border: 0;
+      border-bottom: 1px solid #22d2bb;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
   

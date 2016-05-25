@@ -2,6 +2,13 @@
 * {
   margin: 0;
   padding: 0; }
+  * ::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: yellow; }
+  * ::selection {
+    color: white;
+    background: #646d7c; }
 
 html, body {
   width: 100%;
@@ -55,12 +62,29 @@ header {
     header {
       height: 65px; } }
   header #logo {
-    margin-top: 30px;
     margin-left: 85px; }
     @media (max-width: 768px) {
       header #logo {
         margin-top: 20px;
         margin-left: 55px; } }
+  header .search-bar {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 26px; }
+    header .search-bar span {
+      font-size: 1.5em;
+      color: #646d7c;
+      position: relative;
+      top: 7px;
+      cursor: pointer; }
+    header .search-bar input {
+      display: none;
+      width: 195px;
+      height: 35px;
+      border: 0;
+      border-bottom: 1px solid #22d2bb; }
+      header .search-bar input:focus {
+        outline: none; }
   header .service {
     height: inherit; }
     header .service li {

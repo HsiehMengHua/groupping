@@ -13,7 +13,8 @@
 
 <body>
   <header>
-    <img id="logo" src="img/logo.png" alt="">
+    <a href="index.php"><img id="logo" src="img/logo.png" alt=""></a>
+    <div class="search-bar"><span class="glyphicon glyphicon-search"></span><input type="text"></div>
     <ul class="clear pull-right service">
       <li class="dropdown">
         <p><span class="glyphicon glyphicon-shopping-cart"></span>分類瀏覽<span class="glyphicon glyphicon-menu-down"></span></p>
