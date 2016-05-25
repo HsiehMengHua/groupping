@@ -5,8 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -473,19 +474,11 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvEv5ChK_DJBW9ZYBxLwuo5I88dGNQ18Y&signed_in=true&callback=initMap"></script>
   <script src="js/googlemap.js"></script>
   <script src="js/slideshow.js"></script>
+  <script src="js/dropdown_menu.js"></script>
   <script>
     // Set the size of #jumbotron
     $("#jumbotron").css("height",($("#jumbotron").width()/2).toString());
     $("#jumbotron #slider .slides li").css("height",$("#jumbotron").height().toString());
-    
-    // .dropdown slide in
-    $(".dropdown").hover(function(){
-      $(".menu").slideDown("fast","swing");
-    });
-  
-    $(".dropdown").mouseleave(function(){
-      $(".menu").slideUp("fast","swing");
-    });
   </script>
 </body>
 </html>

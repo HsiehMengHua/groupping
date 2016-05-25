@@ -1,0 +1,143 @@
+.banner {
+  width: 100%;
+  height: 285px;
+  background-image: url(../img/home_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  
+  p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -120px;
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 0.63em;
+  }
+}
+
+#group_info {
+  
+  .group-id {
+    color: #b4b4b4;
+    font-weight: 100;
+    margin-top: 55px;
+  }
+  
+  .container.main {
+    height: 580px;
+  }
+  
+  .images{
+    
+    &>img { // first pic
+      width: 510px;
+      height: 306px;
+      display: block;
+      margin-bottom: 17px;
+    }
+
+    &>.wrap {
+      &>img { // second pic
+        width: 293px;
+        height: 257px;
+        float: left;
+        margin-right: 17px;
+      }
+
+      &>.wrap {
+        float: left;
+        margin-bottom: -17px;
+
+        img { // third and fourth pic
+          width: 200px;
+          height: 120px;
+          display: block;
+          margin-bottom: 17px
+
+        }
+      }
+    }
+  }
+  
+  .content {
+    height: 100%;
+    padding: 0;
+    
+    h2 {
+      margin: 0;
+    }
+    
+    hr {
+      margin: 40px 0;
+    }
+    
+    p {
+      font-size: 1.12em;
+      margin: 32px 0 0 0;
+      font-weight: 300;
+    }
+    
+	.progress {
+      background: #f3f3f3;
+      border: 0px solid rgba(255, 255, 255, 1);
+      border-radius: 3px;
+      height: 25px;
+      margin: 40px 0;
+
+        .progress-bar-custom {
+          background: #f2a359;
+        }
+    }
+    
+    .add-to-fav {
+      float: left;
+      font-size: 1.12em;
+      
+      span {
+        color: #F78B88;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+    }
+    
+    .current-status {
+      float: right;
+      text-align: right;
+      font-size: 1.12em;
+      line-height: 1.5em;
+      font-weight: 300;
+      
+      span {
+        color: #e8334d;
+        font-weight: bold;
+      }
+    }
+    
+    button {
+      width: 100%;
+      height: 70px;
+      background-color: #22d2bb;
+      border-radius: 5px;
+      border: 0;
+      border-bottom: 4px solid #23998a;
+      border-right: 2px solid #23998a;
+      color: white;
+      font-size: 27px;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      position: absolute;
+      bottom: 0;
+      
+      img {
+        height: 27px;
+        position: relative;
+        top: -4px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+

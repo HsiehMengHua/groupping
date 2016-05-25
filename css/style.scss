@@ -1,0 +1,155 @@
+$darkgray: #646d7c;
+
+/* General */
+*{margin: 0; padding: 0;}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial,sans-serif;
+  color: #313b4f;
+  font-size: 100%;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  position: relative;
+}
+
+body {
+  @extend html;
+  position: absolute;
+  top: 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clear>* {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+li {
+  list-style: none;
+}
+
+.glyphicon {
+  margin: 0 10px;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 85px;
+  
+  @media (max-width: 768px){
+    height: 65px;
+  }
+  
+  background-color: white;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  
+  #logo {
+    margin-top: 30px;
+    margin-left: 85px;
+    
+    @media (max-width: 768px){
+      margin-top: 20px;
+      margin-left: 55px;
+    }
+  }
+  
+  .service {
+    height: inherit;
+    
+    li {
+      height: inherit;
+      line-height: 85px;
+      
+        @media (max-width: 768px){
+          line-height: 65px;
+        }
+      
+    }
+    
+    #launch {
+      background-color: $darkgray;
+      color: white;
+      padding: 0 50px;
+      
+      @media (max-width: 768px){
+        padding: 0 30px;
+      }
+      
+      &:hover {
+        background-color: rgba(230, 230, 230, 0.9);
+        color: $darkgray;
+      }
+    }
+    
+    .dropdown {
+      position: relative;
+      text-align: center;
+      width: 290px;
+      
+      @media (max-width: 768px){
+        width: 240px;
+      }
+      
+      &:hover {
+        background-color: rgba(230, 230, 230, 0.9);
+      }
+      
+      .glyphicon-shopping-cart{
+        font-size: 150%;
+        top: 5px;
+        margin-right: 20px;
+      }
+      
+      .glyphicon-menu-down {
+        font-size: 50%;
+        margin-left: 20px;
+      }
+
+      .menu {
+        display: none;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        border: 1px solid lightgray;
+        border-top: 0;
+        width: inherit;
+        
+        &>li {
+          padding: 20px 0;
+          line-height: 18px;
+          
+          @media (max-width: 768px){
+            line-height: 12px;
+          }
+
+          &:hover {background-color: rgba(242, 163, 89, 0.5);}
+        }
+      }
+    }
+  }
+}
