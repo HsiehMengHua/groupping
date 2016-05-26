@@ -1,5 +1,3 @@
-<?php include("connectDB.php"); ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +8,8 @@
 </head>
 <body>
   <form action="launching.php" method="post">
-    團購標題： <input type="text" name="title"><br>
-    商品類別： <select name="category">
+    *團購標題： <input type="text" name="title"><br>
+    *商品類別： <select name="category">
     			<option selected disabled></option>
                 <option name="category" value="熱銷美食">熱銷美食</option>
                 <option name="category" value="服飾鞋包">服飾鞋包</option>
