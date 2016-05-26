@@ -23,11 +23,11 @@
           <li>熱銷美食</li>
           <li>服飾鞋包</li>
           <li>美妝保養</li>
-          <li>居家生活</li>
+          <li>生活雜貨</li>
           <li>休閒娛樂</li>
         </ul>
       </li>
-      <a href="#"><li id="launch"><span class="glyphicon glyphicon-plus"></span>我要開團</li></a>
+      <li id="launch"><a href="launch.php"><span class="glyphicon glyphicon-plus"></span>我要開團</a></li>
     </ul>
   </header>
   <section>
@@ -52,7 +52,7 @@
                <option value="">熱銷美食</option>
                <option value="">服飾鞋包</option>
                <option value="">美妝保養</option>
-               <option value="">居家生活</option>
+               <option value="">生活雜貨</option>
                <option value="">休閒娛樂</option>
              </select><!--
           --><button class="search-btn" type="submit"></button>

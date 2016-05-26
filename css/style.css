@@ -94,15 +94,17 @@ header {
         header .service li {
           line-height: 65px; } }
     header .service #launch {
-      background-color: #646d7c;
-      color: white;
-      padding: 0 50px; }
+      background-color: #646d7c; }
       @media (max-width: 768px) {
         header .service #launch {
           padding: 0 30px; } }
       header .service #launch:hover {
-        background-color: rgba(230, 230, 230, 0.9);
-        color: #646d7c; }
+        background-color: rgba(230, 230, 230, 0.9); }
+        header .service #launch:hover > a {
+          color: #646d7c; }
+      header .service #launch a {
+        padding: 30px 50px;
+        color: white; }
     header .service .dropdown {
       position: relative;
       text-align: center;
@@ -111,7 +113,8 @@ header {
         header .service .dropdown {
           width: 240px; } }
       header .service .dropdown:hover {
-        background-color: rgba(230, 230, 230, 0.9); }
+        background-color: rgba(230, 230, 230, 0.9);
+        cursor: pointer; }
       header .service .dropdown .glyphicon-shopping-cart {
         font-size: 150%;
         top: 5px;

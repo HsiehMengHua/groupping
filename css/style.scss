@@ -131,8 +131,7 @@ header {
     
     #launch {
       background-color: $darkgray;
-      color: white;
-      padding: 0 50px;
+      //padding: 0 50px;
       
       @media (max-width: 768px){
         padding: 0 30px;
@@ -140,7 +139,15 @@ header {
       
       &:hover {
         background-color: rgba(230, 230, 230, 0.9);
-        color: $darkgray;
+        
+        &>a {
+          color: $darkgray;
+        }
+      }
+      
+      a {
+        padding: 30px 50px;
+        color: white;
       }
     }
     
@@ -155,6 +162,7 @@ header {
       
       &:hover {
         background-color: rgba(230, 230, 230, 0.9);
+        cursor: pointer;
       }
       
       .glyphicon-shopping-cart{

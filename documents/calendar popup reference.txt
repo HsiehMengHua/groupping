@@ -1,0 +1,3 @@
+https://jqueryui.com/datepicker/#min-max
+
+source code, API documentation, jQuery UI
