@@ -1,7 +1,7 @@
 <?php include("connectDB.php"); ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>

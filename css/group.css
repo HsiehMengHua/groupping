@@ -27,12 +27,16 @@
   margin: auto; }
   #group_info .main > div {
     float: left; }
-  #group_info .main .images > img {
+  #group_info .main .images .image {
+    background-color: #ededed;
+    background-position: center center;
+    background-size: cover; }
+  #group_info .main .images > .image {
     width: 376px;
     height: 228px;
     display: block;
     margin-bottom: 12px; }
-  #group_info .main .images > .wrap > img {
+  #group_info .main .images > .wrap > .image {
     width: 216px;
     height: 188px;
     float: left;
@@ -40,7 +44,7 @@
   #group_info .main .images > .wrap > .wrap {
     float: left;
     margin-bottom: -12px; }
-    #group_info .main .images > .wrap > .wrap img {
+    #group_info .main .images > .wrap > .wrap .image {
       width: 148px;
       height: 88px;
       display: block;
