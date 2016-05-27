@@ -32,7 +32,7 @@
              	<input type="number" name="quantity" min="1">份
              </label><br>
     商品單價： $ <input type="number" name="price" min="1"> 起<br>
-    圖片上傳： <input type="file" name="imageUpload"><br>
+    圖片上傳： <input type="file" name="imageUpload[]" multiple><br>
     團購說明：<br><textarea name="description" cols="30" rows="10"></textarea><br>
     <input type="submit">
   </form>
