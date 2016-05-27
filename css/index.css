@@ -82,19 +82,19 @@ header #logo {
         float: left; }
         #jumbotron .search-area .link-btn .btn-wrapper button.see-nearby, #jumbotron .search-area .link-btn .btn-wrapper button.view-all {
           width: 100%;
-          background-color: #22d2bb;
+          background-color: #24CBB5;
           border: 0;
-          border-right: 2px solid #23998a;
-          border-bottom: 3px solid #23998a;
+          border-right: 2px solid #1ca08e;
+          border-bottom: 3px solid #1ca08e;
           border-radius: 5px;
           color: white;
           letter-spacing: 2px;
           padding: 14px;
           font-size: 115%; }
         #jumbotron .search-area .link-btn .btn-wrapper button.view-all {
-          background-color: #f2a359;
-          border-bottom-color: #dc8b40;
-          border-right-color: #dc8b40; }
+          background-color: #F2A359;
+          border-bottom-color: #ee892a;
+          border-right-color: #ee892a; }
 
 /* section1_see nearby */
 #view-nearby {
@@ -163,7 +163,7 @@ header #logo {
               height: 12px;
               margin: 15px 0 15px 0; }
               #myCarousel .carousel-inner .wrap .item-wrapper .item .content .progress .progress-bar-custom {
-                background: #f2a359; }
+                background: #F2A359; }
             #myCarousel .carousel-inner .wrap .item-wrapper .item .content .price {
               color: #cb3c3c;
               font-weight: bold;

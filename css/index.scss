@@ -1,3 +1,7 @@
+$mainBlue: #24CBB5;
+$darkenBlue: darken($mainBlue,10%);
+$mainOrange: #F2A359;
+$darkenOrange: darken($mainOrange,10%);
 $darkgray: #646d7c;
 $searchArea_border: 1px solid #97a2a7;
 $border_radius: 5px;
@@ -117,10 +121,10 @@ header {
         
         button.see-nearby {
           width: 100%;
-          background-color: #22d2bb;
+          background-color: $mainBlue;
           border: 0;
-          border-right: 2px solid #23998a;
-          border-bottom: 3px solid #23998a;
+          border-right: 2px solid $darkenBlue;
+          border-bottom: 3px solid $darkenBlue;
           border-radius: $border_radius;
           color: white;
           letter-spacing: 2px;
@@ -130,9 +134,9 @@ header {
         
         button.view-all {
           @extend button.see-nearby;
-          background-color: #f2a359;
-          border-bottom-color: #dc8b40;
-          border-right-color: #dc8b40;
+          background-color: $mainOrange;
+          border-bottom-color: $darkenOrange;
+          border-right-color: $darkenOrange;
         }
       }
     }
@@ -239,7 +243,7 @@ header {
               margin: 15px 0 15px 0;
 
                 .progress-bar-custom {
-                  background: #f2a359;
+                  background: $mainOrange;
                 }
             }
 
