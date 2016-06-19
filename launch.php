@@ -19,10 +19,10 @@
              </select><br>
     商品連結： <input type="text" name="link"><br>
     聯絡電話： <input type="text" name="phone"><br>
-    交貨方式： <label><input type="checkbox" name="location[]" value="直寄">直寄</label>
-    		 <label><input type="checkbox" name="location[]" value="郵寄">郵寄</label>
-             <label><input type="checkbox" name="location[]" value="便利商店寄件">便利商店寄件</label>
-             <label><input type="checkbox" name="location[]" value="面交">面交</label><br>
+    交貨方式： <label><input type="radio" name="location" value="直寄">直寄</label>
+    		 <label><input type="radio" name="location" value="郵寄">郵寄</label>
+             <label><input type="radio" name="location" value="便利商店寄件">便利商店寄件</label>
+             <label><input type="radio" name="location" value="面交">面交</label><br>
     截止時間： <input type="text" id="datetimepicker" name="deadline"><br>
     成團條件： <label><input type="radio" name="target" value="none">不設定</label>
     		 <label><input type="radio" name="target" value="dollar">
