@@ -71,7 +71,7 @@
       height: 21px;
       margin: 20px 0; }
       #group_info .main .content .progress .progress-bar-custom {
-        background: #f2a359; }
+        background: #F2A359; }
     #group_info .main .content .add-to-fav {
       float: left; }
       #group_info .main .content .add-to-fav span {
@@ -92,11 +92,11 @@
     #group_info .main .content button {
       width: 100%;
       height: 48px;
-      background-color: #22d2bb;
+      background-color: #24CBB5;
       border-radius: 5px;
       border: 0;
-      border-bottom: 4px solid #23998a;
-      border-right: 2px solid #23998a;
+      border-bottom: 4px solid #1ca08e;
+      border-right: 2px solid #1ca08e;
       color: white;
       font-size: 1.25em;
       line-height: 1.25em;
@@ -115,11 +115,38 @@
       font-size: 1em;
       font-weight: 300;
       margin: 0;
-      background-image: url(../img/pink_underline.jpg);
+      background-image: url(../img/orange_underline.jpg);
       background-position: left bottom;
       background-repeat: repeat-x; }
     #group_info .main .sider .other-groups img {
       width: 140px;
       margin-top: 30px; }
+
+section.more-info .main {
+  width: 1040px;
+  margin: auto;
+  margin-top: 85px; }
+  section.more-info .main .tabs > button {
+    padding: 18px 25px;
+    background-color: #d8d8db;
+    color: #646d7c;
+    font-size: 1.2em;
+    border: 0;
+    outline: none; }
+    section.more-info .main .tabs > button.active {
+      background-color: #646d7c;
+      color: white;
+      position: relative;
+      -webkit-box-shadow: 5px 2px 15px 0px #a5a5a5;
+      -moz-box-shadow: 5px 2px 15px 0px #a5a5a5;
+      box-shadow: 5px 2px 15px 0px #a5a5a5; }
+  section.more-info .main iframe, section.more-info .main article {
+    height: 1000px;
+    width: 100%;
+    border: 0;
+    border: 1px solid #c9c9c9; }
+  section.more-info .main article {
+    display: none;
+    padding: 30px; }
 
 /*# sourceMappingURL=group.css.map */
